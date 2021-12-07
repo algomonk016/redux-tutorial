@@ -1,0 +1,4 @@
+Reducers:
+    - specify how the app's state changes in the response to actions sent to the store
+    - function
+        (prevState, action) => newState
