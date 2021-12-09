@@ -1,0 +1,27 @@
+Redux Store:
+    - holds the application state 
+    - allows access to state via getState()
+    - allows state to be updated via dispatch(action)
+    - registers listeners via subscribe(listeners)
+
+create Store
+    redux.createStore(reducer_here)
+
+get state
+    store.getState()
+
+add listener
+    store.subscribe(()=> {
+        functions code here
+    })
+
+    this function will return a function which we'll use to unsubscribe the listener
+
+    const unsubscribe = store.subscribe(()=>{
+        code here
+    })
+
+    unsubscribe()
+
+dispatch an action
+    store.dispatch(action_here())
