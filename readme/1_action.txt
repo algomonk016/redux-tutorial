@@ -1,4 +1,4 @@
-action creater:
+action creator:
     - a function that returns action
     
 action:
@@ -7,3 +7,10 @@ action:
     - only way our application can interact with the store
     - carry some information from our app to redux store
     - describe what happened, but don't describe how the state changes
+
+why action creator, not only actions?
+    if we only use actions, 
+    if we only pass actions directly, then if we need to add some property in the action
+    then we'll need to update in all the places where ever we've used it
+
+    so using action creators will save us.
