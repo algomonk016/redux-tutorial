@@ -1,0 +1,16 @@
+Middleware:
+    - way to extend Redux with custom functionality
+    - provides third party extension point between dispatch an action and the moment it reaches the reducer
+    - uses
+        - logging
+        - crash reporting
+        - performing async tasks etc
+
+
+we'll use redux-logger
+    const logger = reduxLogger.createLogger()
+
+to use a logger Middleware,
+    const applyMiddleware = redux.applyMiddleware
+
+    const store = createStore(reducer, applyMiddleware(logger))
